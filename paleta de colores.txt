@@ -1,0 +1,12 @@
+https://colorhunt.co/palette/164613
+
+<div id = "nombre">
+	<button id="nombre">dir</button>
+	<button id="nombre">dir</button>
+</div>
+
+
+
+JQuery
+
+$(document).onload(funtio

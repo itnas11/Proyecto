@@ -1,0 +1,56 @@
+hr{
+	border: 2px solid #2175bc;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+h1{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.Pagina{
+	margin: 0 auto;
+	width: 900px;
+	height: 900px;
+	clear: both;
+	border: 2px solid black;
+}
+.Cabecera{
+	text-align: center;
+}
+.Logo{
+	display: inline-block;
+}
+.Imagen img{
+	width: 200px; 
+	height: 150px;
+}
+.Texto h1{
+	position: relative;
+	bottom: 78px;
+	right: 21px;
+}
+.Menu{
+	text-align: center;
+}
+.Items{
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.Caja{
+	padding: 10px;
+	display: inline-block;
+}
+.Items .Caja li{
+	display: inline;
+	font-family: Arial;
+	font-size: 16px;
+	text-decoration: none;
+	color: #2175bc;
+}
+.Caja:hover{
+	background: #2175bc;
+}
+.Caja:hover li{
+	color: white;
+}

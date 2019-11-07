@@ -1,0 +1,374 @@
+/*CSS que gestiona el html acceso.html*/
+.sesion{
+	background-image: url("../img/fondo_login.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.caja__login{
+	margin: 15% auto;
+	width: 30%;
+}
+.login{
+	width: 300px;
+	padding: 20px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.login__titulo{
+	text-align: center;
+	padding: 25px 15px;
+	font-weight: bold;
+	color: white;
+	background: #779c54;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+.login__registro{
+	padding: 30px 15px;
+	background: #ece6e6;
+	border: solid 1px #779c54;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	margin-left: 0px;
+}
+/*Fin del CSS del HTML acceso.html*/
+/*GRID para ordenar dentro del dd en el que se lo asigno al form y configuro las posiciones de los label e input*/
+.grid__dd{
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: repeat(3, 30%);
+}
+.login__label__dni{
+	grid-column: 1;
+	grid-row: 1;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.login__label__pass{
+	grid-column: 1;
+	grid-row: 2;
+	margin-top: 10px;
+	text-align: center;
+}
+.login__input__dni{
+	grid-column: 2;
+	grid-row: 1;
+	height: 20px;
+	margin-bottom: 5px;
+}
+.login__input__pass{
+	grid-column: 2;
+	grid-row: 2;
+	height: 20px;
+	margin-top: 5px;
+}
+/*Fin de los asignado al GRID*/
+
+/*CSS para la cabecera que incluira en todas las paginas html*/
+.Cabecera{
+	background-color: #779c54;
+	color: white;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	display: grid;
+	grid-template-columns: 75% repeat(1, 25%);
+	grid-template-rows: 1fr;
+}
+.Cabecera__titulo{
+	text-align: left;
+}
+.Cabecera__usuario{
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: 1fr;
+	text-align: center;
+}
+.Cabecera__usuario__bienvenida{
+	margin: 6% auto;
+}
+.Cabecera__usuario__cerrar{
+	margin: 15% auto;
+}
+
+/*Fin de cabecera*/
+/*CSS para el menu que incluira en todas las paginas html del admin*/
+.Menu{
+	text-align: left;
+	background-color: #8a848c;
+}
+.Items{
+	padding: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 0px;
+	position: relative;
+	right: 10px;
+}
+.Caja{
+	padding: 11px;
+	display: inline-block;
+	font-size: 15px;
+}
+.Items a{
+	text-decoration: none;	
+}
+.Items a .Caja{
+	display: inline;
+	font-family: Arial;
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+}
+.Caja:hover{
+	background: #779c54;
+}
+
+.active{
+	background: #779c54;
+}
+/*Fin css para el menu que incluira en todas la paginas html del admin*/
+
+
+/*Css para la tabla clientes*/
+.tabla__clientes{
+	margin: 4% auto;
+	width: 85%;
+}
+.table__F_C{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid #000000;
+}
+.table__F_C th{
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 18%;
+	height: 20px;
+	text-align: center;
+}
+.table__F_C td{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 3px;
+	width: 18%;
+	height: 20px;
+	text-align: center;
+}
+/*Fin css para tablas*/
+/*Ventanas Modales*/
+h2{
+	text-align: center;
+}
+.ventana__modal__acceso{
+	width: 40%;
+	height: 120px;
+	margin: 8% auto;
+	border: 2px solid #779c54;
+	background-color: #ece6e6;
+	border-radius: 10px 10px 10px 10px;
+	position: absolute;
+	left: 28%;
+	z-index: 1;
+	display: none;
+	text-align: center;
+}
+.ventana__modal__validado{
+	width: 40%;
+	height: 120px;
+	margin: 15% auto;
+	border: 2px solid #779c54;
+	background-color: #ece6e6;
+	border-radius: 10px 10px 10px 10px;
+	position: absolute;
+	left: 28%;
+	z-index: 1;
+	display: none;
+	text-align: center;
+}
+#nuevo_cliente{
+	display: none;
+}
+#modificar_cliente{
+	display: none;
+}
+.ventana__modal__Cli_y_Mod{
+	width: 40%;
+	margin: 10% auto;
+	border: 2px solid #779c54;
+	background-color: #ece6e6;
+	border-radius: 10px 10px 10px 10px;
+	position: absolute;
+	left: 27%;
+	z-index: 1;
+	display: none;
+}
+.grid__cliente{
+	display: grid;
+	grid-template-columns: repeat(2, 40%);
+	grid-template-rows: repeat(5, 20%);
+	grid-row-gap: 5px;
+	padding: 10px;
+	text-align: center;
+}
+.buttons_modal{
+	grid-column: 2;
+	grid-row: 6;
+	margin-left: auto;
+}
+
+.ventana__modal__imagen{
+	width: 228.6px;
+	height: 200px;
+	margin: 15% auto;
+	background: #ece6e6;
+	border: 2px solid #779c54;
+	border-radius: 10px 10px 10px 10px;
+	position: absolute;
+	left: 42%;
+	z-index: 1;
+	display: none;
+}
+/*Fin de ventanas modales*/
+/*Css para las imagenes de los documentos*/
+.imagen__producto{
+	position: relative;
+	width: 70%;
+	top: 20px;
+}
+.imagen__cerrar{
+	position: relative;
+	width: 13%;
+	bottom: 125px;
+	left: 8%;
+	z-index: 1;
+}
+.imagen__valido{
+	position: relative;
+	top: 35px;
+	right: 36%;
+}
+.imagen__error{
+	position: relative;
+	top: 35px;
+	right: 36%;
+}
+.td_imagen_producto{
+	width: 16%;
+	height: 22px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	left: 42%;
+}
+.catan{
+	background-image: url("../img/catan.jpg");
+}
+.risk{
+	background-image: url("../img/risk.jpg");
+}
+.dead_of_winter{
+	background-image: url("../img/dead_of_winter.jpg");
+}
+.guerra_del_anillo{
+	background-image: url("../img/guerra_del_anillo.jpg");
+}
+/*Fin de Css imagenes*/
+/*Css para los botones*/
+.anyadir{
+	color: white;
+	background: #38A0D4;
+	padding: 5px 5px;
+	border: solid 1px blue;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	position: relative;
+	left: 8%;
+	top: 48px;
+
+}
+.acceder{
+	color: white;
+	background: #9aaa84;
+	padding: 5px 5px;
+	width: 55%;
+	border: solid 1px #8a848c;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	margin-left: auto;
+	grid-column: 2;
+	grid-row: 3;
+	margin-top: 10px;
+}
+.editar{
+	color: white;
+	background: #87DE25;
+	margin-right: 5px;
+	border: solid 1px green;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.borrar{
+	color: white;
+	background: #DE3D2A;
+	margin-left: 5px;
+	border: solid 1px red;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.aceptar{
+	color: white;
+	background-color: #779c54;
+	padding: 3px;
+	border: solid 1px green;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+/*Efectos del boton acceder*/
+.acceder:active{
+	background-color: #8a848c;
+}
+.aceptar:active{
+	background-color: #8a848c;
+}
+.borrar:active{
+	background-color: red;
+}
+.editar:active{
+	background-color: green;
+}
+.anyadir:active{
+	background-color: blue;
+}
+/*Fin de css y efectos para botones*/
+
+/*Configuracion del footer*/
+
+.footer{
+	background-color: #779c54;
+	color: white;
+	text-align: center;
+	clear: both;
+	position: relative;
+	top: 400px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+/*Fin del footer*/

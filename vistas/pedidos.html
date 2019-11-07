@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Admin de la tienda</title>
+	<link rel="stylesheet" type="text/css" href="../css/admin_panel.css">
+</head>
+<body>
+	<header class="Cabecera">
+		<div class="Cabecera__titulo">
+			<h1>Admin menu</h1>
+		</div>
+		<div class="Cabecera__usuario">
+			<div class="Cabecera__usuario__bienvenida"><p>Bienvenid@</p></div>
+			<div class="Cabecera__usuario__cerrar"><button>Desconetar</button></div>
+		</div>
+	</header>
+	<nav class="Menu">
+			<div class="Items">
+				<a href="cliente.html"><div class="Caja">Gestión clientes</div></a>
+				<a href="producto.html"><div class="Caja">Gestión productos</div></a>
+				<a href="pedidos.html"><div class="Caja active">Gestión de pedidos</div></a>
+			</div>
+		</nav>
+	<section>
+		<article>
+			<button class="anyadir">Nuevo Pedido</button>
+			<table class="tabla__clientes">
+				<thead>
+					<tr class="table__F_C">
+						<th>ID</th>
+						<th>Fecha</th>
+						<th>Cliente</th>
+						<th>Operaciones</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="table__F_C">
+						<td>1</td>
+						<td>12/11/2019</td>
+						<td>Maria Pilar Sanchez</td>
+						<td><button class="editar">Editar</button><button class="borrar">Borrar</button></td>
+					</tr>
+					<tr class="table__F_C">
+						<td>2</td>
+						<td>25/12/2019</td>
+						<td>Pedro Rivaldo Gomez</td>
+						<td><button class="editar">Editar</button><button class="borrar">Borrar</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+	</section>
+	<footer class="footer">
+		<p>Copyright &#169;2019 Elaborado por Santiago Asensio Peinado</p>
+	</footer>
+</body>
+</html>

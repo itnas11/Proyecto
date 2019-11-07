@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Admin de la tienda</title>
+	<link rel="stylesheet" type="text/css" href="../css/admin_panel.css">
+</head>
+<body>
+	<header class="Cabecera">
+		<div class="Cabecera__titulo">
+			<h1>Admin menu</h1>
+		</div>
+		<div class="Cabecera__usuario">
+			<div class="Cabecera__usuario__bienvenida"><p>Bienvenid@</p></div>
+			<div class="Cabecera__usuario__cerrar"><button>Desconetar</button></div>
+		</div>
+	</header>
+	<nav class="Menu">
+			<div class="Items">
+				<a href="cliente.html"><div class="Caja">Gestión clientes</div></a>
+				<a href="producto.html"><div class="Caja active">Gestión productos</div></a>
+				<a href="pedidos.html"><div class="Caja">Gestión de pedidos</div></a>
+			</div>
+		</nav>
+	<section>
+		<article>
+			<div class="ventana__modal__imagen" id="imagen">
+				<img alt="" src="../img/cerrar.png" class="imagen__cerrar">
+				<img alt="" src="../img/catan.jpg" class="imagen__producto">
+			</div>
+			<button class="anyadir">Nuevo Producto</button>
+			<table class="tabla__clientes">
+				<thead>
+					<tr class="table__F_C">
+						<th>ID</th>
+						<th>Imagen</th>
+						<th>Nombre</th>
+						<th>Marca</th>
+						<th>Operaciones</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="table__F_C">
+						<td>123456</td>
+						<td><div class="td_imagen_producto catan"></div></td>
+						<td>Catan</td>
+						<td>Entertaiment</td>
+						<td><button class="editar">Editar</button><button class="borrar">Borrar</button></td>
+					</tr>
+					<tr class="table__F_C">
+						<td>654321</td>
+						<td><div class="td_imagen_producto risk"></div></td>
+						<td>Risk</td>
+						<td>Entertaiment</td>
+						<td><button class="editar">Editar</button><button class="borrar">Borrar</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+	</section>
+	<footer class="footer">
+		<p>Copyright &#169;2019 Elaborado por Santiago Asensio Peinado</p>
+	</footer>
+</body>
+</html>

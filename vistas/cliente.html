@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Admin de la tienda</title>
+	<link rel="stylesheet" type="text/css" href="../css/admin_panel.css">
+</head>
+<body>
+	<header class="Cabecera">
+		<div class="Cabecera__titulo">
+			<h1>Admin menu</h1>
+		</div>
+		<div class="Cabecera__usuario">
+			<div class="Cabecera__usuario__bienvenida"><p>Bienvenid@</p></div>
+			<div class="Cabecera__usuario__cerrar"><button>Desconetar</button></div>
+		</div>
+	</header>
+	<nav class="Menu">
+		<div class="Items">
+			<a href="../vistas/cliente.html"><div class="Caja active">Gestión clientes</div></a>
+			<a href="../vistas/producto.html"><div class="Caja">Gestión productos</div></a>
+			<a href="../vistas/pedidos.html"><div class="Caja">Gestión de pedidos</div></a>
+		</div>
+	</nav>
+	<section>
+		<article>
+			<div class="ventana__modal__Cli_y_Mod" id="nuevo_cliente">
+				<h2>Nuevo Usuario</h2>
+				<form action="" method="post" class="grid__cliente">
+					<label for="nuevodni">DNI</label>
+					<input type="text" id="nuevodni" name="nuevodni">
+					<label for="nuevonombre">Nombre</label>
+					<input type="text" id="nuevonombre" name="nuevonombre">
+					<label for="nuevodireccion">Dirección</label>
+					<input type="text" id="nuevodireccion" name="nuevodireccion">
+					<label for="nuevoemail">Email</label>
+					<input type="email" id="nuevoemail" name="nuevoemail">
+
+					<div class="buttons_modal">
+						<input type="submit" name="crear" value="Crear Usuario" id="crear">
+						<input type="button" name="cancelar" value="Cancelar" id="cancelar_cliente">
+					</div>
+				</form>
+			</div>
+			<div class="ventana__modal__Cli_y_Mod" id="modificar_cliente">
+				<h2>Modificar Usuario</h2>
+				<form action="" method="post" class="grid__cliente">
+					<label for="modificardni">DNI</label>
+					<input type="text" id="modificardni" name="modificardni" disabled>
+					<label for="modificarnombre">Nombre</label>
+					<input type="text" id="modificarnombre" name="modificarnombre">
+					<label for="modificardireccion">Dirección</label>
+					<input type="text" id="modificardireccion" name="modificardireccion">
+					<label for="modificaremail">Email</label>
+					<input type="email" id="modificaremail" name="modificaremail">
+
+					<div class="buttons_modal">
+						<input type="submit" name="crear" value="Modificar" id="crear">
+						<input type="button" name="cancelar" value="Cancelar" id="cancelar_modificar">
+					</div>
+				</form>
+			</div>
+			<div class="ventana__modal__validado" id="validado">
+				<img alt="" src="../img/success.png" class="imagen__valido">
+				<p>El usuario se ha modificado con exito</p>
+				<button class="aceptar">Aceptar</button>
+			</div>
+			<button class="anyadir" id="anyadir">Nuevo Cliente</button>
+			<table class="tabla__clientes">
+				<thead>
+					<tr class="table__F_C">
+						<th>DNI</th>
+						<th>Nombre</th>
+						<th>Operaciones</th>
+					</tr>
+				</thead>
+				<tbody id="clientes">
+
+				</tbody>
+			</table>
+		</article>
+	</section>
+	<footer class="footer">
+		<p>Copyright &#169;2019 Elaborado por Santiago Asensio Peinado</p>
+	</footer>
+</body>
+</html>
+
+<!-- Add JQuery -->
+<script src="../JavaScript/jquery-3.4.1.min.js"></script>
+<script src="../JavaScript/jAjax.js"></script>

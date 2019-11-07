@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Acceso a la admin</title>
+	<link rel="stylesheet" type="text/css" href="../css/admin_panel.css">
+</head>
+<body class="sesion">
+	<header>
+		
+	</header>
+	<section>
+		<article>
+			<div class="ventana__modal__acceso" id="acceso">
+				<img src="../img/error.png" class="imagen__error">
+				<p>El usuario no existe o la contraseña es incorrecta</p>
+				<button class="aceptar">Aceptar</button>
+			</div>
+			<div class="caja__login">
+				<dl class="login">
+					<dt class="login__titulo">
+						Iniciar Sesion
+					</dt>
+					<dd class="login__registro">
+						<form action="" method="post" class="grid__dd">
+							<label for="dni" class="login__label__dni">DNI: </label>
+							<input type="text" id="dni" name="dni" maxlength="9" class="login__input__dni"><br>
+							<label for="password" class="login__label__pass">Password: </label>
+							<input type="password" id="password" name="password" class="login__input__pass"><br>
+						
+							<input type="submit" name="acceder" value="Acceder" class="acceder">
+						</form>
+					</dd>
+				</dl>
+			</div>
+		</article>
+	</section>
+	<footer>
+		
+	</footer>
+</body>
+</html>
